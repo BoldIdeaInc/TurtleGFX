@@ -1,0 +1,25 @@
+{
+  "name": "turtlegfx",
+  "version": "1.0.0",
+  "description": "In a nutshell this library allows to code with 🐢 Turtle Graphics in JavaScript.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "prepare": "mkdir dist && bash -c 'cat lib/p5.min.js <(npx uglifyjs lib/turtlegfx.js) > dist/turtlegfx.min.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeGuppyPrograms/TurtleGFX.git"
+  },
+  "author": "Code Guppy",
+  "license": "CC BY 2.0",
+  "bugs": {
+    "url": "https://github.com/CodeGuppyPrograms/TurtleGFX/issues"
+  },
+  "homepage": "https://github.com/CodeGuppyPrograms/TurtleGFX#readme",
+  "devDependencies": {
+    "uglify-es": "^3.3.9"
+  }
+}
